@@ -1,0 +1,140 @@
+    <div class="container">
+<div class="container-inner">
+<div class="ma-brand-slider-contain">
+              	<ul class="bxslider">
+				            </ul>
+            <script type="text/javascript">
+			       //<![CDATA[
+					$jq(document).ready(function(){
+					  $jq('.ma-brand-slider-contain .bxslider').bxSlider(
+						{
+												  auto: true,
+												  speed: 1000,
+						  pause: 600,			  
+						  minSlides: 2,
+						  infiniteLoop: false,
+						  maxSlides: 10,
+						  slideWidth: 170,
+						  slideMargin:25,
+					      
+						  pager:false, 
+																			controls: true,
+												moveSlides: 2
+						}
+					  );
+					});
+				//]]>
+				</script>	
+</div>
+</div>
+</div> <div class="footer-static-container">
+    <div class="container">
+        <div class="footer-static row">
+            
+                
+		<div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
+		<div class="footer-static-title f-title1">
+		<h3>TESTIMONIALS</h3>
+		</div>
+		<div class="footer-static-content">
+		<p>&ldquo; This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum &rdquo;</p>
+		<div class="f-name">
+		<p>- Danielle Sharp -</p>
+		</div>
+		</div>
+		</div>
+		<div class="f-col f-col2 col-sm-6 col-md-2 col-sms-6 col-smb-12">
+		<div class="footer-static-title f-title2">
+		<h3>MY ACCOUNT</h3>
+		</div>
+		<div class="footer-static-content row-fluid">
+		<ul>
+		<li class="first"><a href="http://www.vipfavor.com/index.php/catalog/seo_sitemap/category">Sitemap</a></li>
+		<li><a href="http://www.vipfavor.com/index.php/privacy-policy-cookie-restriction-mode">Privacy Policy</a></li>
+		<li><a href="http://www.vipfavor.com/index.php/customer/account/index">Your Account</a></li>
+		<li><a href="http://www.vipfavor.com/index.php/catalogsearch/advanced">Advanced Search</a></li>
+		<li class="last"><a href="http://www.vipfavor.com/index.php/contacts">Contact Us</a></li>
+		</ul>
+		</div>
+		</div>
+		<div class="f-col f-col3 col-sm-6 col-md-2 col-sms-6 col-smb-12">
+		<div class="footer-static-title f-title3">
+		<h3>INFORMATION</h3>
+		</div>
+		<div class="footer-static-content">
+		<ul>
+		<li class="first"><a href="http://www.vipfavor.com/index.php/customer/account/index/">My Account</a></li>
+		<li><a href="sales/order/history/">Order History</a></li>
+		<li><a href="#">Returns</a></li>
+		<li><a href="#">Specials</a></li>
+		<li class="last"><a href="http://www.vipfavor.com/index.php/catalog/seo_sitemap/category">Site Map</a></li>
+		</ul>
+		</div>
+		</div>
+		<div class="f-col f-col3 col-sm-6 col-md-2 col-sms-6 col-smb-12">
+		<div class="footer-static-title f-title4">
+		<h3>WHY BUY FROM US</h3>
+		</div>
+		<div class="footer-static-content">
+		<ul>
+		<li class="first"><a href="http://www.vipfavor.com/index.php/catalog/seo_sitemap/category">Site Map</a></li>
+		<li><a href="#">Specials</a></li>
+		<li><a href="#">Returns</a></li>
+		<li><a href="sales/order/history/">Order History</a></li>
+		<li class="last"><a href="http://www.vipfavor.com/index.php/customer/account/index/">My Account</a></li>
+		</ul>
+		</div>
+		</div>
+		<div class="f-col f-col4 col-sm-12 col-md-3">
+		<div class="footer-static-title f-title5">
+		<h3>ABOUT US</h3>
+		</div>
+		<div class="footer-static-content">
+		<div class="f-adress">
+		<p>8901 Marmora Road, Glasgow, D04 89GR</p>
+		</div>
+		<div class="f-phone">
+		<p>Telephone: (801) 2345 - 6789</p>
+		</div>
+		<div class="f-email">
+		<p>E-mail: support@plazathemes.com</p>
+		</div>
+		<div class="f-payment"><img src="http://www.vipfavor.com/media/wysiwyg/payment.png" alt="" /></div>
+		</div>
+		</div>
+		
+                    </div>
+    </div>
+</div>
+<div class="ma-footer-container">
+    <div class="container">
+        <div class="footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <address>&copy; 2015 Magento Demo Store. All Rights Reserved.</address>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="box-footer">
+                    <ul>
+<li><a href="http://www.vipfavor.com/index.php/about-magento-demo-store">About Us</a></li>
+<li><a href="http://www.vipfavor.com/index.php/customer-service">Customer Service</a></li>
+<li class="last privacy"><a href="http://www.vipfavor.com/index.php/privacy-policy-cookie-restriction-mode">Privacy Policy</a></li>
+</ul>                    <div class="f-images">
+                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="back-top" class="hidden-xs"></div>
+        </div>
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+
+            jQuery('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+    </script>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>MB_Translate</name>
+    <version>0.1.1</version>
+    <stability>stable</stability>
+    <license>public</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>CMS/Block translation</summary>
+    <description>Translate CMS Pages in Magento.&#xD;
+&#xD;
+Use: In any CMS Page or Block use {{translate text="Text here"}} and the text will be translatable with the Inline translator.</description>
+    <notes>Stable version</notes>
+    <authors><author><name>Miguel Balparda</name><user>miguel_balparda</user><email>development@starton.com.ar</email></author></authors>
+    <date>2014-02-08</date>
+    <time>12:40:30</time>
+    <contents><target name="magelocal"><dir name="MB"><dir name="Translate"><dir name="Helper"><file name="Data.php" hash="409e62fecab96df8ec3dcd2325b0153d"/></dir><dir name="Model"><dir name="Template"><file name="Filter.php" hash="ca359bc2b8eb8bfaab4b70aef49fec84"/></dir></dir><dir name="etc"><file name="config.xml" hash="8b648fc0c9b3dbd3f5691c48cc77fee5"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="MB_Translate.xml" hash="40250a1c1920ae3450fcc56c91df1c20"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

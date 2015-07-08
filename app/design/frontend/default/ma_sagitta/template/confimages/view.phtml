@@ -1,0 +1,168 @@
+<?php 
+/**
+ * @author		Sashas
+ * @category    Sashas
+ * @package     Sashas_Confimages
+ * @copyright   Copyright (c) 2013 Sashas IT Support Inc. (http://www.sashas.org)
+ * @license     http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
+ */
+
+$_product=$this->getProduct();
+$extension_enabled=$this->isEnabled();
+$theme_package=Mage::getSingleton('core/design_package')->getPackageName();
+
+if ($extension_enabled && $_product->getTypeId() =='configurable') :	 	 
+	$js_product_options=$this->getProductOptionsJs(); 	
+	$js_observe_onchange_handles=$this->getAttributeHandlers();	 
+?> 
+<!-- Sashas Configurable Image -->
+<script type="text/javascript">
+ 
+//<![CDATA[ 
+	var conf_product_images=JSON.parse('<?php echo $js_product_options; ?>');    
+    document.observe('dom:loaded', function() { 
+    	<?php echo $js_observe_onchange_handles; ?>
+    	if (window.jQuery) {
+        	jQuery( "a[id^='swatch']").each(function(){
+            	  jQuery(this).click(function(){
+            	      var selected_option=jQuery(this).attr('id').replace( /[^\d.]/g, '' );
+            	      var attribute_id=jQuery( "option[value='"+selected_option+"']").parent().attr('id').replace( /[^\d.]/g, '' );
+            	     conf_change_image(attribute_id,selected_option);
+            	  });
+            	});    	            	    	        	
+    	}    	  	    	 
+     });
+    
+    /*  var products=[]; */
+    
+    function RefreshProducts(){
+    $$('select[id^="attribute"]').each( function(i) {
+        
+      var attribute_id=$(i).id.replace( /[^\d.]/g,'');
+     
+      if ($(i).value && !isNaN($(i).value) ) {
+    		 
+         
+        var option_id=$(i).value;
+            
+        spConfig.config.attributes[attribute_id].options.each(function(opt) {
+          
+          if (option_id==opt.id) {
+            
+            if (opt.allowedProducts!==undefined && opt.allowedProducts.length>0) {
+              
+              if (products.length<1)
+                products=opt.allowedProducts;
+              
+              products=intersect(products,opt.allowedProducts);
+            } else {
+              
+              if (products.length<1)
+                products=opt.allowedProducts;          
+              
+              products=intersect(products,opt.products);
+              
+            }         
+            
+          }
+          
+        });
+            
+       }  
+       
+      
+    });
+
+    }    
+    
+    function intersect(a, b) {
+      var t;
+      if (b.length > a.length) t = b, b = a, a = t; 
+      return a.filter(function (e) {
+        if (b.indexOf(e) !== -1) return true;
+      });
+    }
+    
+    
+    function conf_change_image(id, option_id){
+
+        var active_product_id;
+        /*
+         RefreshProducts();
+        if (products.length != 0)
+            active_product_id=products[0];
+        
+	if (products.length == 0 ||  products.length >1)
+		active_product_id=-1;		        
+        */
+        var products=[];
+                
+		if (option_id.length == 0)
+			active_product_id=-1;		 		
+		else {
+	    	spConfig.config.attributes[id].options.each(
+	    			function(element){
+		    			 if (option_id==element.id) {
+		    				 if (element.allowedProducts===undefined)
+		    					 	products=element.products;
+		    					 else
+		    						products=element.allowedProducts;    			 
+		    			 }	
+	    			 });	
+		   	/* if (products.length==1) */
+		   	active_product_id=products[0];			   	  	
+		}
+		/*Reset if was switched*/
+	    	  /* if (typeof  conf_product_images[active_product_id] == 'undefined' ||  typeof  conf_product_images[active_product_id]['small_image'] == 'undefined' )
+	    	   {
+	    		   products=[];
+	    	   } */		
+		 /*	$('image').up().href */
+		<?php if (Mage::getConfig()->getModuleConfig('Elevate_Zoom')->is('active', 'true')): ?>
+			var ez = jQuery('#image').data('elevateZoom');	
+			if (conf_product_images[active_product_id]!=undefined) {
+		 		ez.swaptheimage(conf_product_images[active_product_id]['small_image'], conf_product_images[active_product_id]['full_image']);
+		 		jQuery('#image').attr('data-zoom-image',conf_product_images[active_product_id]['full_image']);  
+			} else
+				console.log("Image undefined"); 		 
+ 
+	    	 			
+		 <?php else: ?>
+	       <?php if (substr(Mage::getVersion(),0,3)=="1.9" && $theme_package=='rwd'):  ?>
+	       	jQuery('#image-main').attr('src',conf_product_images[active_product_id]['small_image']);   
+	    	jQuery('#image-main').attr('data-zoom-image',conf_product_images[active_product_id]['full_image']);  
+	    	jQuery(".zoomContainer").remove();
+	    	jQuery("#image-main").elevateZoom(); 
+	       <?php else:?>
+	       if (window.jQuery &&  jQuery('.cloud-zoom').length>0) {  
+	    	   jQuery('.product-image .cloud-zoom img').attr('src',conf_product_images[active_product_id]['small_image']);
+	    	   jQuery('.product-image .cloud-zoom').attr('href',conf_product_images[active_product_id]['full_image']);
+	    	   jQuery('.cloud-zoom').CloudZoom();	   
+	    	   <?php  /** Custom Cloud Zoom 1.0.2 
+	    		 		* @see https://gist.github.com/e337ff0cc17f7312cf71.git 	 		
+	    		  		**/
+	    		  ?>	    	    	   
+				if (jQuery('.ma-a-lighbox').length>0) {
+					jQuery('.ma-a-lighbox').attr('href',conf_product_images[active_product_id]['small_image']);
+				}
+	    	   if (jQuery('#zoom-btn').length>0) {
+	    		   jQuery('#zoom-btn').attr('href',conf_product_images[active_product_id]['small_image']);
+	    	   }
+	    	 } else {
+	    		 $('image').src=conf_product_images[active_product_id]['full_image'];  
+
+	    		 if ($('zoom-btn') != undefined) {
+	    			 $('zoom-btn').href=conf_product_images[active_product_id]['full_image'];  
+	    			}	 	    		 
+	    	 }    
+	       <?php endif;?>	                
+       <?php endif;?>
+        /*Reset products*/
+        /* products=[];*/
+    }
+//]]>
+</script>
+<!-- Sashas Configurable Image -->
+<?php endif; ?>    
+ 
+  

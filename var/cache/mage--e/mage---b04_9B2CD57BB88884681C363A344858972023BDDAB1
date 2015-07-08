@@ -1,0 +1,203 @@
+<div class="ma-nav-mobile-container visible-xs">
+	<div class="container">
+		<div class="navbar">
+			<div id="navbar-inner" class="navbar-inner navbar-inactive">
+                                <div class="menu-mobile">
+                                    <a class="btn btn-navbar navbar-toggle">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                    </a>
+                                    <span class="brand navbar-brand">Categories</span>
+                                </div>
+				<ul id="ma-mobilemenu" class="mobilemenu nav-collapse collapse">
+					<li class="level0 nav-1 active level-top first parent">
+<a href="http://www.vipfavor.com/index.php/kids.html?___SID=U" class="level-top">
+<span>kids</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 active first last">
+<a href="http://www.vipfavor.com/index.php/catalog/category/view/s/shoes/id/4/?___SID=U">
+<span>shoes</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-2 level-top parent">
+<a href="http://www.vipfavor.com/index.php/men.html?___SID=U" class="level-top">
+<span>men</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-2-1 first last">
+<a href="http://www.vipfavor.com/index.php/catalog/category/view/s/shoes/id/6/?___SID=U">
+<span>shoes</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-3 level-top last parent">
+<a href="http://www.vipfavor.com/index.php/women.html?___SID=U" class="level-top">
+<span>women</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-3-1 first last">
+<a href="http://www.vipfavor.com/index.php/catalog/category/view/s/shoes/id/8/?___SID=U">
+<span>shoes</span>
+</a>
+</li>
+</ul>
+</li>				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="nav-container visible-lg visible-md">
+    <div class="container">
+        <div id="pt_custommenu" class="pt_custommenu">
+        <div id="pt_menu_home" class="pt_menu">
+<div class="parentMenu">
+<a href="http://www.vipfavor.com/index.php/">
+<span>Home</span>
+</a>
+</div>
+</div>                                                                    
+        <div id="pt_menu_pt_item_menu_categories" class="pt_menu">
+<div class="parentMenu">
+<span class="block-title">Categories</span>
+</div>
+<div id="popup_pt_item_menu_categories" class="popup cmsblock" style="display: none; width: 904px;">
+<div class="arrow-menu" id="arrow-menu_pt_item_menu_categories">
+</div>
+<div class="box-menu" id="box-menu_pt_item_menu_categories">
+<div class="block2" id="block2_pt_item_menu_categories">
+<div class="static_block_custom_menu">
+<div class="custom col">
+<div class="custom-images"><a href="http://www.vipfavor.com/index.php/women/shoes.html?___SID=U"><img alt="" src="http://www.vipfavor.com/media/wysiwyg/category5.png" /></a></div>
+</div>
+<div class="custom col2">
+<div class="custom-images6">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div id="pt_menu_pt_item_menu_featured_custom" class="pt_menu">
+<div class="parentMenu">
+<span class="block-title">Featured&nbsp;Custom</span>
+</div>
+<div id="popup_pt_item_menu_featured_custom" class="popup cmsblock" style="display: none; width: 904px;">
+<div class="arrow-menu" id="arrow-menu_pt_item_menu_featured_custom">
+</div>
+<div class="box-menu" id="box-menu_pt_item_menu_featured_custom">
+<div class="block2" id="block2_pt_item_menu_featured_custom">
+
+                
+		<div class="feature-catlist"><div class="catlist">
+	<h2 class="title-catlist">CATEGORY LIST</h2>
+	 
+	<div class='catgrid col_1'><div class="catlist_level_top">
+						<a href="http://www.vipfavor.com/index.php/kids.html/?___SID=U"><img src="" alt="kids" />
+		                </a>
+				<h3>kids</h3>
+			</div><ul><li><a href="http://www.vipfavor.com/index.php/kids/shoes.html/?___SID=U">shoes</a></li></ul></div><div class='catgrid col_2'><div class="catlist_level_top">
+						<a href="http://www.vipfavor.com/index.php/men.html/?___SID=U"><img src="" alt="men" />
+		                </a>
+				<h3>men</h3>
+			</div><ul><li><a href="http://www.vipfavor.com/index.php/men/shoes.html/?___SID=U">shoes</a></li></ul></div><div class='catgrid last col_3'><div class="catlist_level_top">
+						<a href="http://www.vipfavor.com/index.php/women.html/?___SID=U"><img src="" alt="women" />
+		                </a>
+				<h3>women</h3>
+			</div><ul><li><a href="http://www.vipfavor.com/index.php/women/shoes.html/?___SID=U">shoes</a></li></ul></div></div></div>
+		
+            
+</div>
+</div>
+</div>
+</div><div id="pt_menu_pt_item_menu_brands" class="pt_menu">
+<div class="parentMenu">
+<span class="block-title">Our&nbsp;Brands</span>
+</div>
+<div id="popup_pt_item_menu_brands" class="popup cmsblock" style="display: none; width: 904px;">
+<div class="arrow-menu" id="arrow-menu_pt_item_menu_brands">
+</div>
+<div class="box-menu" id="box-menu_pt_item_menu_brands">
+<div class="block2" id="block2_pt_item_menu_brands">
+
+                
+		<div class="static_block_brands">
+		<div class="brands col">
+		<div class="brands-images"><a href="#"><img src="http://www.vipfavor.com/media/wysiwyg/cus-brands.png" alt="" /></a></div>
+		<div class="brands-images1"><a href="#"><img src="http://www.vipfavor.com/media/wysiwyg/cus1-brands.png" alt="" /></a></div>
+		<div class="brands-images2"><a href="#"><img src="http://www.vipfavor.com/media/wysiwyg/cus2-brands.png" alt="" /></a></div>
+		<div class="brands-images3"><a href="#"><img src="http://www.vipfavor.com/media/wysiwyg/cus3-brands.png" alt="" /></a></div>
+		</div>
+		<div class="brands col1">
+		<div class="brands-images4"><a href="#"><img src="http://www.vipfavor.com/media/wysiwyg/cus4-brands.png" alt="" /></a></div>
+		<div class="brands-images5"><a href="#"><img src="http://www.vipfavor.com/media/wysiwyg/cus5-brands.png" alt="" /></a></div>
+		<div class="brands-images6"><a href="#"><img src="http://www.vipfavor.com/media/wysiwyg/cus6-brands.png" alt="" /></a></div>
+		<div class="brands-images7"><a href="#"><img src="http://www.vipfavor.com/media/wysiwyg/cus7-brands.png" alt="" /></a></div>
+		</div>
+		</div>
+		
+            
+</div>
+</div>
+</div>
+</div><div id="pt_menu_pt_item_menu_block" class="pt_menu">
+<div class="parentMenu">
+<span class="block-title">Custom&nbsp;Menu</span>
+</div>
+<div id="popup_pt_item_menu_block" class="popup cmsblock" style="display: none; width: 904px;">
+<div class="arrow-menu" id="arrow-menu_pt_item_menu_block">
+</div>
+<div class="box-menu" id="box-menu_pt_item_menu_block">
+<div class="block2" id="block2_pt_item_menu_block">
+
+                
+		<div class="static_custom_block">
+		<div class="menu-custom-block col">
+		<div class="custom-block-title">
+		<h2>CUSTOM BLOCK</h2>
+		</div>
+		<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit.</p>
+		</div>
+		<div class="menu-custom-block col1">
+		<div class="custom-block-images"><a href="http://www.vipfavor.com/index.php/shirts.html?___SID=U"><img src="http://www.vipfavor.com/media/wysiwyg/img-menu-cus.png" alt="" /></a></div>
+		<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velitauct auctor aliquet.</p>
+		<div class="cuttom-link"><a href="http://www.vipfavor.com/index.php/shirts.html?___SID=U">View all features &raquo;</a></div>
+		</div>
+		<div class="menu-custom-block col2">
+		<div class="custom-block-images"><a href="http://www.vipfavor.com/index.php/pants.html?___SID=U"><img src="http://www.vipfavor.com/media/wysiwyg/img1-menu-cus.png" alt="" /></a></div>
+		<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velitauct auctor aliquet.</p>
+		<div class="cuttom-link"><a href="http://www.vipfavor.com/index.php/pants.html?___SID=U">View all features &raquo;</a></div>
+		</div>
+		</div>
+		
+            
+</div>
+</div>
+</div>
+</div><div id="pt_menu_link" class="pt_menu">
+<div class="parentMenu">
+
+                
+		<ul>
+		<li><a href="http://www.vipfavor.com/index.php/bestsellerproductlist/?___SID=U">Sale products</a></li>
+		<li><a href="http://www.vipfavor.com/index.php/newproductlist?___SID=U">New products</a></li>
+		<li><a href="http://www.vipfavor.com/index.php/contacts/?___SID=U">Contact Us</a></li>
+		<li><a href="http://www.vipfavor.com/index.php/about-magento-demo-store?___SID=U">About us</a></li>
+		</ul>
+		
+            
+</div>
+</div>        
+        <div class="clearBoth"></div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var CUSTOMMENU_POPUP_EFFECT = 0;
+var CUSTOMMENU_POPUP_TOP_OFFSET = 79;
+//]]>
+</script>
+
