@@ -6,12 +6,12 @@
         <div class="header-select">
             <select class="selectpicker" id="cat" name="cat">
                 <option value="">Categories</option>
-                                    <option value="7">women</option>
-                                                                                                        <option value="8">_shoes</option>
-                                                                                                                                                                                                                <option value="3">kids</option>
+                                    <option value="3">kids</option>
                                                                                                         <option value="4">_shoes</option>
                                                                                                                                                                                                                 <option value="5">men</option>
                                                                                                         <option value="6">_shoes</option>
+                                                                                                                                                                                                                <option value="7">women</option>
+                                                                                                        <option value="8">_shoes</option>
                                                                                                                                                                                                         </select>
         </div>
         </div>
