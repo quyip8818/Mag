@@ -1,0 +1,16 @@
+
+<form id="search_mini_form" action="http://www.vipfavor.com/index.php/catalogsearch/result/?___SID=U" method="get">
+    <div class="form-search">
+        <label for="search">Search:</label>
+        <div class="box-select">
+        <div class="header-select">
+            <select class="selectpicker" id="cat" name="cat">
+                <option value="">Categories</option>
+                            </select>
+        </div>
+        </div>
+        <div class="header-input"><input id="search" type="text" name="q" class="input-text" /></div>
+        <button type="submit" title="Search" class="button"><span><span>Search</span></span></button>
+        <!--<div id="search_autocomplete" class="search-autocomplete"></div>-->
+    </div>
+</form>
