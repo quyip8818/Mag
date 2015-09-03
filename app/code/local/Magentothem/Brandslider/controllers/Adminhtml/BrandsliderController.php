@@ -54,7 +54,11 @@ class Magentothem_Brandslider_Adminhtml_BrandsliderController extends Mage_Admin
  
 public function saveAction() {
 		if ($data = $this->getRequest()->getPost()) {
+<<<<<<< HEAD
 			$data['store_ids'] = implode(',',$data['store_ids']);
+=======
+			
+>>>>>>> origin/master
 			if(isset($_FILES['image']['name']) && $_FILES['image']['name'] != null) {
 				try {	
 					/* Starting upload */	

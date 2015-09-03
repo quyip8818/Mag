@@ -127,6 +127,7 @@
 	<default>
 		<catlist>
 			<list_config>
+<<<<<<< HEAD
 		    <enabled>1</enabled>
 				<title>CATEGORY LIST</title>
 				<!-- <sort_name>asc</sort_name> -->
@@ -135,6 +136,14 @@
 				<width_thumbnail>140</width_thumbnail>
 			    <height_thumbnail>50</height_thumbnail>
 				<!-- <background_color>#BDBDBD</background_color> -->
+=======
+				<enabled>1</enabled>
+				<title>CATEGORY LIST</title>
+				<number_items>5</number_items>
+				<item_width>100</item_width>
+				<width_thumbnail>140</width_thumbnail>
+				<height_thumbnail>50</height_thumbnail>
+>>>>>>> origin/master
 			</list_config>
 		</catlist>
 	</default>

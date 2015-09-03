@@ -24,7 +24,11 @@ class Magentothem_Onsaleslider_Block_Onsaleslider extends Mage_Catalog_Block_Pro
 		if($cateids) {
 				$arr_productids = $this->getProductByCategory();
 				$products = Mage::getResourceModel('catalog/product_collection')
+<<<<<<< HEAD
 				->addAttributeToSelect('*')
+=======
+				->addAttributeToSelect(Mage::getSingleton('catalog/config')->getProductAttributes())
+>>>>>>> origin/master
 				->addMinimalPrice()
 				->addUrlRewrite()
 				->addTaxPercents()			
@@ -35,7 +39,11 @@ class Magentothem_Onsaleslider_Block_Onsaleslider extends Mage_Catalog_Block_Pro
 		else {
 		$products = Mage::getResourceModel('catalog/product_collection')
 		->joinField('category_id','catalog/category_product','category_id','product_id=entity_id',null,'left')
+<<<<<<< HEAD
 				->addAttributeToSelect('*')
+=======
+				->addAttributeToSelect(Mage::getSingleton('catalog/config')->getProductAttributes())
+>>>>>>> origin/master
 				->addMinimalPrice()
 				->addUrlRewrite()
 				->addTaxPercents()			

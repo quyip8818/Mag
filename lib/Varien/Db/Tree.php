@@ -10,17 +10,29 @@
  * http://opensource.org/licenses/osl-3.0.php
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
+<<<<<<< HEAD
  * to license@magento.com so we can send you a copy immediately.
+=======
+ * to license@magentocommerce.com so we can send you a copy immediately.
+>>>>>>> origin/master
  *
  * DISCLAIMER
  *
  * Do not edit or add to this file if you wish to upgrade Magento to newer
  * versions in the future. If you wish to customize Magento for your
+<<<<<<< HEAD
  * needs please refer to http://www.magento.com for more information.
  *
  * @category    Varien
  * @package     Varien_Db
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+=======
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   Varien
+ * @package    Varien_Db
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+>>>>>>> origin/master
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -333,11 +345,19 @@ class Varien_Db_Tree
 
                 // UPDATE my_tree SET left_key = IF(left_key > $left_key, left_key – ($right_key - $left_key + 1), left_key), right_key = right_key – ($right_key - $left_key + 1) WHERE right_key > $right_key
                 $sql = 'UPDATE '.$this->_table.'
+<<<<<<< HEAD
                     SET
                         '.$this->_left.' = IF('.$this->_left.' > '.$info[$this->_left].', '.$this->_left.' - '.($info[$this->_right] - $info[$this->_left] + 1).', '.$this->_left.'),
                         '.$this->_right.' = '.$this->_right.' - '.($info[$this->_right] - $info[$this->_left] + 1).'
                     WHERE
                         '.$this->_right.' > '.$info[$this->_right];
+=======
+					SET
+						'.$this->_left.' = IF('.$this->_left.' > '.$info[$this->_left].', '.$this->_left.' - '.($info[$this->_right] - $info[$this->_left] + 1).', '.$this->_left.'),
+						'.$this->_right.' = '.$this->_right.' - '.($info[$this->_right] - $info[$this->_left] + 1).'
+					WHERE
+						'.$this->_right.' > '.$info[$this->_right];
+>>>>>>> origin/master
                 $this->_db->query($sql);
                 $this->_db->commit();
                 return new Varien_Db_Tree_Node($info, $this->getKeys());;

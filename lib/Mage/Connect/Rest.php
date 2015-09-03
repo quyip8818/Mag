@@ -10,18 +10,31 @@
  * http://opensource.org/licenses/osl-3.0.php
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
+<<<<<<< HEAD
  * to license@magento.com so we can send you a copy immediately.
+=======
+ * to license@magentocommerce.com so we can send you a copy immediately.
+>>>>>>> origin/master
  *
  * DISCLAIMER
  *
  * Do not edit or add to this file if you wish to upgrade Magento to newer
  * versions in the future. If you wish to customize Magento for your
+<<<<<<< HEAD
  * needs please refer to http://www.magento.com for more information.
  *
  * @category    Mage
  * @package     Mage_Connect
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+=======
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    Mage
+ * @package     Mage_Connect
+ * @copyright   Copyright (c) 2009 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+>>>>>>> origin/master
  */
 
 /**
@@ -217,6 +230,7 @@ class Mage_Connect_Rest
             }
             $return = $output;
         }
+<<<<<<< HEAD
 
         $out = array();
         foreach($return as $name=>$package) {
@@ -226,6 +240,17 @@ class Mage_Connect_Rest
             ksort($package);
             $out[$name] = $package;
         }
+=======
+        
+        $out = array();
+        foreach($return as $name=>$package) {
+            $stabilities = array_map(array($this, 'shortStateToLong'), array_keys($package));
+            $versions = array_map('trim', array_values($package));                
+            $package = array_combine($versions, $stabilities);
+            ksort($package);
+            $out[$name] = $package;
+        }        
+>>>>>>> origin/master
         return $out;
     }
 
@@ -335,8 +360,13 @@ class Mage_Connect_Rest
                 }
             }
         }
+<<<<<<< HEAD
 
 
+=======
+        
+        
+>>>>>>> origin/master
         $out = $this->loadChannelUri($package."/".$version."/".$package."-".$version.".".self::EXT);
 
         $statusCode = $this->getLoader()->getStatus();
@@ -353,12 +383,21 @@ class Mage_Connect_Rest
     }
 
     protected $states = array('b'=>'beta', 'd'=>'dev', 's'=>'stable', 'a'=>'alpha');
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> origin/master
     public function shortStateToLong($s)
     {
         return isset($this->states[$s]) ? $this->states[$s] : 'dev';
     }
+<<<<<<< HEAD
 
 
+=======
+            
+    
+>>>>>>> origin/master
 }
 

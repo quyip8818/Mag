@@ -10,17 +10,29 @@
  * http://opensource.org/licenses/osl-3.0.php
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
+<<<<<<< HEAD
  * to license@magento.com so we can send you a copy immediately.
+=======
+ * to license@magentocommerce.com so we can send you a copy immediately.
+>>>>>>> origin/master
  *
  * DISCLAIMER
  *
  * Do not edit or add to this file if you wish to upgrade Magento to newer
  * versions in the future. If you wish to customize Magento for your
+<<<<<<< HEAD
  * needs please refer to http://www.magento.com for more information.
  *
  * @category    Varien
  * @package     Varien_Data
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+=======
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   Varien
+ * @package    Varien_Data
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+>>>>>>> origin/master
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -49,7 +61,11 @@ class Varien_Data_Form_Element_Gallery extends Varien_Data_Form_Element_Abstract
         $buttonHtml = $widgetButton->createBlock('adminhtml/widget_button')
                 ->setData(
                     array(
+<<<<<<< HEAD
                         'label'     => 'Add New Image',
+=======
+					    'label'     => 'Add New Image',
+>>>>>>> origin/master
                         'onclick'   => 'addNewImg()',
                         'class'     => 'add'))
                 ->toHtml();
@@ -113,6 +129,7 @@ class Varien_Data_Form_Element_Gallery extends Varien_Data_Form_Element_Abstract
             id--;
             new_file_input = '<input type="file" name="{$name}_%j%[%id%]" size="1" />';
 
+<<<<<<< HEAD
             // Sort order input
             var new_row_input = document.createElement( 'input' );
             new_row_input.type = 'text';
@@ -124,6 +141,19 @@ class Varien_Data_Form_Element_Gallery extends Varien_Data_Form_Element_Abstract
             var new_row_button = document.createElement( 'input' );
             new_row_button.type = 'checkbox';
             new_row_button.value = 'Delete';
+=======
+		    // Sort order input
+		    var new_row_input = document.createElement( 'input' );
+		    new_row_input.type = 'text';
+		    new_row_input.name = '{$parentName}[position]['+id+']';
+		    new_row_input.size = '3';
+		    new_row_input.value = '0';
+
+		    // Delete button
+		    var new_row_button = document.createElement( 'input' );
+		    new_row_button.type = 'checkbox';
+		    new_row_button.value = 'Delete';
+>>>>>>> origin/master
 
             table = document.getElementById( "gallery" );
 
@@ -144,10 +174,17 @@ class Varien_Data_Form_Element_Gallery extends Varien_Data_Form_Element_Abstract
                 newCell.valign = "middle";
 
                 if (j==3) {
+<<<<<<< HEAD
                     newCell.appendChild( new_row_input );
                 }
                 else if (j==4) {
                     newCell.appendChild( new_row_button );
+=======
+		            newCell.appendChild( new_row_input );
+                }
+                else if (j==4) {
+		            newCell.appendChild( new_row_button );
+>>>>>>> origin/master
                 }
                 else {
                     newCell.innerHTML = new_file_input.replace(/%j%/g, j).replace(/%id%/g, id);
@@ -155,6 +192,7 @@ class Varien_Data_Form_Element_Gallery extends Varien_Data_Form_Element_Abstract
 
             }
 
+<<<<<<< HEAD
             // Delete function
             new_row_button.onclick= function(){
 
@@ -167,6 +205,20 @@ class Varien_Data_Form_Element_Gallery extends Varien_Data_Form_Element_Abstract
             };
 
         }
+=======
+		    // Delete function
+		    new_row_button.onclick= function(){
+
+                this.parentNode.parentNode.parentNode.removeChild( this.parentNode.parentNode );
+
+			    // Appease Safari
+			    //    without it Safari wants to reload the browser window
+			    //    which nixes your already queued uploads
+			    return false;
+		    };
+
+	    }
+>>>>>>> origin/master
         </script>
 
 EndSCRIPT;

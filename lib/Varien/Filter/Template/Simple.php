@@ -10,23 +10,36 @@
  * http://opensource.org/licenses/osl-3.0.php
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
+<<<<<<< HEAD
  * to license@magento.com so we can send you a copy immediately.
+=======
+ * to license@magentocommerce.com so we can send you a copy immediately.
+>>>>>>> origin/master
  *
  * DISCLAIMER
  *
  * Do not edit or add to this file if you wish to upgrade Magento to newer
  * versions in the future. If you wish to customize Magento for your
+<<<<<<< HEAD
  * needs please refer to http://www.magento.com for more information.
  *
  * @category    Varien
  * @package     Varien_Filter
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+=======
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   Varien
+ * @package    Varien_Filter
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+>>>>>>> origin/master
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 
 class Varien_Filter_Template_Simple extends Varien_Object implements Zend_Filter_Interface
 {
+<<<<<<< HEAD
     protected $_startTag = '{{';
     protected $_endTag = '}}';
 
@@ -42,3 +55,20 @@ class Varien_Filter_Template_Simple extends Varien_Object implements Zend_Filter
         return preg_replace('#'.$this->_startTag.'(.*?)'.$this->_endTag.'#e', '$this->getData("$1")', $value);
     }
 }
+=======
+	protected $_startTag = '{{';
+	protected $_endTag = '}}';
+
+	public function setTags($start, $end)
+	{
+		$this->_startTag = $start;
+		$this->_endTag = $end;
+		return $this;
+	}
+
+	public function filter($value)
+	{
+		return preg_replace('#'.$this->_startTag.'(.*?)'.$this->_endTag.'#e', '$this->getData("$1")', $value);
+	}
+}
+>>>>>>> origin/master

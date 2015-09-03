@@ -49,15 +49,25 @@ class Magentothem_Bestsellerproductlist_Block_Bestsellerproductlist extends Mage
         }
         $attributes = Mage::getSingleton('catalog/config')->getProductAttributes();
         $collection = Mage::getModel('catalog/product')
+<<<<<<< HEAD
 			->getCollection()
 			->addAttributeToSelect($attributes)
 			->addAttributeToFilter('entity_id', array('in' => $maxQty))
 			->setOrder(Mage::getBlockSingleton('catalog/product_list_toolbar')->getCurrentOrder(), Mage::getBlockSingleton('catalog/product_list_toolbar')->getCurrentDirection()); 
+=======
+                        ->getCollection()
+                        ->addAttributeToSelect($attributes)
+                        ->addAttributeToFilter('entity_id', array('in' => $maxQty))
+                        ->setOrder(Mage::getBlockSingleton('catalog/product_list_toolbar')->getCurrentOrder(), Mage::getBlockSingleton('catalog/product_list_toolbar')->getCurrentDirection());
+>>>>>>> origin/master
 
         Mage::getSingleton('catalog/product_status')->addVisibleFilterToCollection($collection);
         Mage::getSingleton('catalog/product_visibility')->addVisibleInCatalogFilterToCollection($collection);
         $limit = (int)$this->getRequest()->getParam('limit') ? (int)$this->getRequest()->getParam('limit') : (int)$this->getToolbarBlock()->getDefaultPerPageValue();
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
         $collection->setPageSize($limit)->setCurPage($this->getRequest()->getParam('p'));
         Mage::getModel('review/review')->appendSummary($collection);
         //$collection->load();

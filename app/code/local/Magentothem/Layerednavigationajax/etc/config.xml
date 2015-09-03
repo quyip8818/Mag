@@ -2,7 +2,11 @@
 <config>
     <modules>
         <Magentothem_Layerednavigationajax>
+<<<<<<< HEAD
             <version>1.7.0</version>
+=======
+            <version>1.8.0</version>
+>>>>>>> origin/master
         </Magentothem_Layerednavigationajax>
     </modules>
     <frontend>
@@ -107,6 +111,14 @@
                     <layer>Magentothem_Layerednavigationajax_Model_Catalog_Layer</layer>
                 </rewrite>
             </catalog>
+<<<<<<< HEAD
+=======
+			 <catalog>
+                <rewrite>
+                    <layer_filter_price>Magentothem_Layerednavigationajax_Model_Catalog_Layer_Filter_Price</layer_filter_price>
+                </rewrite>
+            </catalog>
+>>>>>>> origin/master
             <catalogsearch>
                 <rewrite>
                     <layer>Magentothem_Layerednavigationajax_Model_Catalogsearch_Layer</layer>

@@ -106,8 +106,13 @@
 				<item_width>146</item_width>
 				<width_thumbnail>300</width_thumbnail>
 				<height_thumbnail>300</height_thumbnail>
+<<<<<<< HEAD
 				<next_back>1</next_back>
 				<nav_ctrl>0</nav_ctrl>
+=======
+				<next_back>0</next_back>
+				<nav_ctrl>1</nav_ctrl>
+>>>>>>> origin/master
 			</categorytabsliders_config>
 		</categorytabsliders>
 	</default>

@@ -132,7 +132,11 @@
 		<banner8>
 			<banner8_config>
 				<enabled>1</enabled>
+<<<<<<< HEAD
 				<animation>random</animation>
+=======
+				<animation>slide</animation>
+>>>>>>> origin/master
 				<speed>3000</speed>
 				<interval>500</interval>
 				<qty_item>4</qty_item>

@@ -28,7 +28,11 @@
 <config>
     <global>
         <install>
+<<<<<<< HEAD
             <date><![CDATA[Wed, 17 Jun 2015 05:58:37 +0000]]></date>
+=======
+            <date><![CDATA[Wed, 19 Aug 2015 21:38:56 +0000]]></date>
+>>>>>>> origin/master
         </install>
         <crypt>
             <key><![CDATA[aed9e4b500196eabddb759a82cfa9d34]]></key>
@@ -42,7 +46,11 @@
                 <connection>
                     <host><![CDATA[localhost]]></host>
                     <username><![CDATA[root]]></username>
+<<<<<<< HEAD
                     <password><![CDATA[0a7c32717984]]></password>
+=======
+                    <password><![CDATA[aaf65451bbb7]]></password>
+>>>>>>> origin/master
                     <dbname><![CDATA[magento]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
@@ -52,13 +60,21 @@
                 </connection>
             </default_setup>
         </resources>
+<<<<<<< HEAD
         <session_save><![CDATA[files]]></session_save>
+=======
+        <session_save><![CDATA[db]]></session_save>
+>>>>>>> origin/master
     </global>
     <admin>
         <routers>
             <adminhtml>
                 <args>
+<<<<<<< HEAD
                     <frontName><![CDATA[manager]]></frontName>
+=======
+                    <frontName><![CDATA[admin]]></frontName>
+>>>>>>> origin/master
                 </args>
             </adminhtml>
         </routers>

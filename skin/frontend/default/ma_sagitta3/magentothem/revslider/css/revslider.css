@@ -1,0 +1,20 @@
+.tp-caption.des_banner { width: 335px; display: inline-block; text-align: center; white-space: inherit !important;}
+.bg-link { background: #f9c831; padding: 2px;}
+.tp-caption.des_banner1 {
+    background: url("../images/bg-repeat.png") repeat;
+}
+@media (max-width: 1200px) {
+    .tp-caption.des_banner{width: 350px;}
+}
+@media (max-width: 991px) {
+    .tp-caption.des_banner{width: 210px;}
+}
+@media (max-width: 570px) {
+    .tp-caption.des_banner{width: 180px;}
+}
+@media (max-width: 500px) {
+    .tp-caption.des_banner{width: 150px;}
+}
+@media (max-width: 400px) {
+    .tp-caption.des_banner{width: 100px;}
+}

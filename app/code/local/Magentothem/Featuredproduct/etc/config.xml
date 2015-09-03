@@ -139,8 +139,13 @@
 				<description>0</description>
 				<qty>3</qty>
 				<items>3</items>
+<<<<<<< HEAD
 				<width>500</width>
 				<height>500</height>
+=======
+				<width>150</width>
+				<height>150</height>
+>>>>>>> origin/master
 			</featuredproduct_config>
 		</featuredproduct>
 	</default>

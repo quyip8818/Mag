@@ -20,7 +20,11 @@
  *
  * @category    Mage
  * @package     Mage_XmlConnect
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+=======
+ * @copyright  Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+>>>>>>> origin/master
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -143,7 +147,11 @@ class Mage_XmlConnect_Model_Observer
         /** @var $request Mage_Core_Controller_Request_Http */
         $request = Mage::app()->getRequest();
         if (true === $this->_checkAdminController($request, $event->getControllerAction())) {
+<<<<<<< HEAD
             $request->setInternallyForwarded()->setDispatched(true);
+=======
+            $request->setParam('forwarded', true)->setDispatched(true);
+>>>>>>> origin/master
         }
     }
 
@@ -160,7 +168,11 @@ class Mage_XmlConnect_Model_Observer
         if (false === $this->_checkAdminController($request, $event->getControllerAction())
             && !Mage::getSingleton('admin/session')->isLoggedIn()
         ) {
+<<<<<<< HEAD
             $request->setInternallyForwarded()->setRouteName('adminhtml')->setControllerName('connect_user')
+=======
+            $request->setParam('forwarded', true)->setRouteName('adminhtml')->setControllerName('connect_user')
+>>>>>>> origin/master
                 ->setActionName('loginform')->setDispatched(false);
         }
     }

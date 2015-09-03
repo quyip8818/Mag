@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 /**
  * Magento
  *
@@ -23,6 +24,8 @@
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
+=======
+>>>>>>> origin/master
 class Mage_Xml_Generator
 {
     protected $_dom = null;
@@ -111,4 +114,8 @@ class Mage_Xml_Generator
         return $this;
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

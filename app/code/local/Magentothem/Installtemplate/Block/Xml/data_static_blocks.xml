@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
+<<<<<<< HEAD
 <ma_sagitta>
+=======
+<ma_sagitta3>
+>>>>>>> origin/master
     <blocks>
 
         <block>
@@ -8,10 +12,34 @@
             <content>
                     <![CDATA[
 			<div class="banner-static-contain">
+<<<<<<< HEAD
 			<div class="home-banner-static row">
 			<div class="banner-box banner-box1 col-sm-4 col-md-4 col-sms-12 col-smb-12"><a href="{{store direct_url="shirts.html"}}"><img src="{{media url="wysiwyg/block1.jpg"}}" alt="" /></a></div>
 			<div class="banner-box banner-box2 col-sm-4 col-md-4 col-sms-12 col-smb-12"><a href="{{store direct_url="pants.html"}}"><img src="{{media url="wysiwyg/block2.jpg"}}" alt="" /></a></div>
 			<div class="banner-box banner-box3 col-sm-4 col-md-4 col-sms-12 col-smb-12"><a href="{{store direct_url="jeans.html"}}"><img src="{{media url="wysiwyg/block3.jpg"}}" alt="" /></a></div>
+=======
+			<div class="container">
+			<div class="home-banner-static row">
+			<div class="banner-box banner-box1 col-sm-12 col-md-4 col-sms-12 col-smb-12"><a href="{{store direct_url="shirts.html"}}">image</a>
+			<div class="box-title">
+			<h2>FREE SHIPPING &amp; RETURN</h2>
+			<p>This is Photoshop's version Lorem Ipsum.Proin gravida ipsnibh vel velit auctor aliquet aenean sollicitudin quis.</p>
+			</div>
+			</div>
+			<div class="banner-box banner-box2 col-sm-12 col-md-4 col-sms-12 col-smb-12"><a href="{{store direct_url="shirts.html"}}">image</a>
+			<div class="box-title">
+			<h2>100% Money Back</h2>
+			<p>This is Photoshop's version Lorem Ipsum.Proin gravida ipsnibh vel velit auctor aliquet aenean sollicitudin quis.</p>
+			</div>
+			</div>
+			<div class="banner-box banner-box3 col-sm-12 col-md-4 col-sms-12 col-smb-12"><a href="{{store direct_url="shirts.html"}}">image</a>
+			<div class="box-title">
+			<h2>PHONE: 0123-456-789</h2>
+			<p>This is Photoshop's version Lorem Ipsum.Proin gravida ipsnibh vel velit auctor aliquet aenean sollicitudin quis.</p>
+			</div>
+			</div>
+			</div>
+>>>>>>> origin/master
 			</div>
 			</div>
 		    ]]>
@@ -25,6 +53,7 @@
             <identifier>footer_static</identifier>
             <content>
                 <![CDATA[
+<<<<<<< HEAD
 		<div class="f-col col-sm-6 col-md-3 col-sms-6 col-smb-12">
 		<div class="footer-static-title f-title1">
 		<h3>TESTIMONIALS</h3>
@@ -37,6 +66,15 @@
 		</div>
 		</div>
 		<div class="f-col f-col2 col-sm-6 col-md-2 col-sms-6 col-smb-12">
+=======
+		<div class="f-col col-sm-12 col-md-3 col-sms-12 col-smb-12">
+		<div class="footer-static-title f-title1">
+		<h3>TESTIMONIALS</h3>
+		</div>
+		<div class="footer-static-content">{{block type="testimonial/sidebar" name="testimonial.sidebar" before="-"}}</div>
+		</div>
+		<div class="f-col f-col2 col-sm-6 col-md-2 col-sms-12 col-smb-12">
+>>>>>>> origin/master
 		<div class="footer-static-title f-title2">
 		<h3>MY ACCOUNT</h3>
 		</div>
@@ -64,7 +102,11 @@
 		</ul>
 		</div>
 		</div>
+<<<<<<< HEAD
 		<div class="f-col f-col3 col-sm-6 col-md-2 col-sms-6 col-smb-12">
+=======
+		<div class="f-col f-col3 col-sm-6 col-md-2 col-sms-12 col-smb-12">
+>>>>>>> origin/master
 		<div class="footer-static-title f-title4">
 		<h3>WHY BUY FROM US</h3>
 		</div>
@@ -78,7 +120,11 @@
 		</ul>
 		</div>
 		</div>
+<<<<<<< HEAD
 		<div class="f-col f-col4 col-sm-12 col-md-3">
+=======
+		<div class="f-col f-col4 col-sms-6 col-sm-6 col-smb-12 col-md-3">
+>>>>>>> origin/master
 		<div class="footer-static-title f-title5">
 		<h3>ABOUT US</h3>
 		</div>
@@ -112,6 +158,7 @@
         </block>
 	
 	<block>
+<<<<<<< HEAD
             <title>Banner Right</title>
             <identifier>banner_right</identifier>
             <content>
@@ -183,6 +230,8 @@
         </block>
 	
 	<block>
+=======
+>>>>>>> origin/master
             <title>Banner Center One</title>
             <identifier>banner_center_one</identifier>
             <content>
@@ -246,8 +295,11 @@
             <content>
                 <![CDATA[
 		<ul>
+<<<<<<< HEAD
 		<li><a href="{{store url="bestsellerproductlist"}}">Sale products</a></li>
 		<li><a href="{{store direct_url="newproductlist"}}">New products</a></li>
+=======
+>>>>>>> origin/master
 		<li><a href="{{store url="contacts"}}">Contact Us</a></li>
 		<li><a href="{{store direct_url="about-magento-demo-store"}}">About us</a></li>
 		</ul>
@@ -272,35 +324,62 @@
             <identifier>static_right</identifier>
             <content>
                 <![CDATA[
+<<<<<<< HEAD
 		<div class="static-left">
 		<div class="static-left-content">
 		<div class="l-col facebook">
 		<div class="box-left">
+=======
+		<div class="static-right">
+		<div class="static-right-content">
+		<div class="l-col facebook">
+		<div class="box-right">
+>>>>>>> origin/master
 		<div class="l-text"><a href="https://www.facebook.com/magentothem">Find us on Facebook</a></div>
 		</div>
 		</div>
 		<div class="l-col insta">
+<<<<<<< HEAD
 		<div class="box-left">
+=======
+		<div class="box-right">
+>>>>>>> origin/master
 		<div class="l-text"><a href="http://instagram.com/">Find us on Instagram</a></div>
 		</div>
 		</div>
 		<div class="l-col twitter">
+<<<<<<< HEAD
 		<div class="box-left">
+=======
+		<div class="box-right">
+>>>>>>> origin/master
 		<div class="l-text"><a href="https://twitter.com/plazathemes">Find us on Twitter</a></div>
 		</div>
 		</div>
 		<div class="l-col dribble">
+<<<<<<< HEAD
 		<div class="box-left">
+=======
+		<div class="box-right">
+>>>>>>> origin/master
 		<div class="l-text"><a href="http://blog.dribbble.com/">Find us on Dribble</a></div>
 		</div>
 		</div>
 		<div class="l-col pinterest">
+<<<<<<< HEAD
 		<div class="box-left">
+=======
+		<div class="box-right">
+>>>>>>> origin/master
 		<div class="l-text"><a href="https://www.pinterest.com/">Find us on Pinterest</a></div>
 		</div>
 		</div>
 		<div class="l-col google">
+<<<<<<< HEAD
 		<div class="box-left">
+=======
+		<div class="box-right">
+>>>>>>> origin/master
 		<div class="l-text"><a href="https://plus.google.com">Find us on Google +</a></div>
 		</div>
 		</div>
@@ -337,7 +416,11 @@
 	
 	<block>
             <title>Static Sub Menu Col Right</title>
+<<<<<<< HEAD
             <identifier>pt_menu_idcat_4_right</identifier>
+=======
+            <identifier>pt_menu_idcat_25_right</identifier>
+>>>>>>> origin/master
             <content>
                 <![CDATA[
 		<div class="custom-menu-right">
@@ -381,7 +464,11 @@
 	
 	<block>
             <title>Static Sub Menu Bottom</title>
+<<<<<<< HEAD
             <identifier>pt_menu_idcat_8</identifier>
+=======
+            <identifier>pt_menu_idcat_21</identifier>
+>>>>>>> origin/master
             <content>
                 <![CDATA[
 		<div class="custom-menu-bottom">
@@ -400,8 +487,68 @@
             <is_active>1</is_active>
         </block>
 	
+<<<<<<< HEAD
 	
     </blocks>
 
 </ma_sagitta>
+=======
+	<block>
+            <title>Footer Static One</title>
+            <identifier>footer_static_one</identifier>
+            <content>
+                <![CDATA[
+		<div class="container">
+		<div class="footer-static-one">
+		<div class="footer-static-one-title">
+		<h2>Blog</h2>
+		</div>
+		<div class="footer-static-one-box">
+		<div class="row">
+		<div class="col-md-4 col-sm-4 col-sms-12 f-one-col">
+		<div class="f-one-images"><a href="#"> <img src="{{media url="wysiwyg/bg-footer-one.png"}}" alt="" /></a>
+		<div class="f-text">
+		<p>Post on <span class="text1">June, 11th 2014 </span> by <span class="text1">Admin</span></p>
+		</div>
+		</div>
+		<div class="f-one-content">
+		<h2>Great Sample Article Heading Goes Here</h2>
+		<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum...<a href="#">Read more &raquo;</a></p>
+		</div>
+		</div>
+		<div class="col-md-4 col-sm-4  col-sms-12 f-one-col1">
+		<div class="f-one-images"><a href="#"> <img src="{{media url="wysiwyg/bg1-footer-one.png"}}" alt="" /></a>
+		<div class="f-text">
+		<p>Post on <span class="text1">June, 11th 2014 </span> by <span class="text1">Admin</span></p>
+		</div>
+		</div>
+		<div class="f-one-content">
+		<h2>Great Sample Article Heading Goes Here</h2>
+		<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum...<a href="#">Read more &raquo;</a></p>
+		</div>
+		</div>
+		<div class="col-md-4 col-sm-4 col-sms-12 f-one-col2">
+		<div class="f-one-images"><a href="#"><img src="{{media url="wysiwyg/bg2-footer-one.png"}}" alt="" /></a>
+		<div class="f-text">
+		<p>Post on <span class="text1">June, 11th 2014 </span> by <span class="text1">Admin</span></p>
+		</div>
+		</div>
+		<div class="f-one-content">
+		<h2>Great Sample Article Heading Goes Here</h2>
+		<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum...<a href="#">Read more &raquo;</a></p>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+	
+    </blocks>
+
+</ma_sagitta3>
+>>>>>>> origin/master
 

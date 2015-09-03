@@ -34,10 +34,17 @@ class Magentothem_Installtemplate_Model_Installtemplate extends Mage_Core_Model_
     public function saveTemplateConfig(int $store) {
         $scope = ($store ? 'stores' : 'default');
 		Mage::getConfig()->saveConfig('design/package/name', 'default', $scope, $store);
+<<<<<<< HEAD
         Mage::getConfig()->saveConfig('design/theme/default', 'ma_sagitta', $scope, $store);
         Mage::getConfig()->saveConfig('web/default/cms_home_page', 'ma_sagitta_home', $scope, $store);
 		Mage::getConfig()->saveConfig('design/theme/default', 'ma_sagitta', 'default', 0);
         Mage::getConfig()->saveConfig('web/default/cms_home_page', 'ma_sagitta_home', 'default', 0);
+=======
+        Mage::getConfig()->saveConfig('design/theme/default', 'ma_sagitta3', $scope, $store);
+        Mage::getConfig()->saveConfig('web/default/cms_home_page', 'ma_sagitta3_home', $scope, $store);
+		Mage::getConfig()->saveConfig('design/theme/default', 'ma_sagitta3', 'default', 0);
+        Mage::getConfig()->saveConfig('web/default/cms_home_page', 'ma_sagitta3_home', 'default', 0);
+>>>>>>> origin/master
     }
     
        

@@ -16,7 +16,10 @@ CREATE TABLE {$this->getTable('brandslider')} (
   `image` varchar(255) NOT NULL default '',
   `description` text NOT NULL default '',
   `status` smallint(6) NOT NULL default '0',
+<<<<<<< HEAD
   `store_ids` varchar(255) NOT NULL default '',
+=======
+>>>>>>> origin/master
   `created_time` datetime NULL,
   `update_time` datetime NULL,
   PRIMARY KEY (`brandslider_id`)

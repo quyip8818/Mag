@@ -19,11 +19,17 @@ class Magentothem_Brandslider_Block_Brandslider extends Mage_Core_Block_Template
 		$read= $resource->getConnection('core_read');
 		$slideTable = $resource->getTableName('brandslider');	
 		$select = $read->select()
+<<<<<<< HEAD
 		   ->from($slideTable,array('brandslider_id','title','link','description','image','status','store_ids'))
 		   ->where('find_in_set(0, store_ids) OR find_in_set(?, store_ids)', (int)(Mage::app()->getStore()->getId()))
 		   ->where('status=?',1);
 		$slide = $read->fetchAll($select);	
 		Mage::log($slide,null,'brand.log');
+=======
+		   ->from($slideTable,array('brandslider_id','title','link','description','image','status'))
+		   ->where('status=?',1);
+		$slide = $read->fetchAll($select);	
+>>>>>>> origin/master
 		return 	$slide;			
     }
 	public function getConfig($att) 

@@ -20,7 +20,11 @@
  *
  * @category    Mage
  * @package     Mage_Core
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+=======
+ * @copyright  Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+>>>>>>> origin/master
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -272,6 +276,7 @@ class Mage_Core_Model_Translate_Inline
 <script type="text/javascript">
     new TranslateInline('translate-inline-trig', '<?php echo $ajaxUrl ?>', '<?php
         echo Mage::getDesign()->getArea() ?>');
+<<<<<<< HEAD
     if(Object.__defineGetter__)
     {
         var hasTranslateAttribute = function(){
@@ -283,6 +288,8 @@ class Mage_Core_Model_Translate_Inline
             });
         });
     }
+=======
+>>>>>>> origin/master
 </script>
 <?php
         $html = ob_get_clean();

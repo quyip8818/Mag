@@ -142,8 +142,13 @@
 				<qty>3</qty>
 				<items_show>1</items_show>
 				<item_width>260</item_width>
+<<<<<<< HEAD
 				<width_thumbnail>500</width_thumbnail>
 				<height_thumbnail>500</height_thumbnail>
+=======
+				<width_thumbnail>300</width_thumbnail>
+				<height_thumbnail>300</height_thumbnail>
+>>>>>>> origin/master
 				<next_back>0</next_back>
 				<nav_ctrl>1</nav_ctrl>
 			</onsaleslider_config>

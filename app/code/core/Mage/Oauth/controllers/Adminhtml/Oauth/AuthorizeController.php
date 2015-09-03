@@ -20,7 +20,11 @@
  *
  * @category    Mage
  * @package     Mage_Oauth
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+=======
+ * @copyright  Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+>>>>>>> origin/master
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -55,7 +59,11 @@ class Mage_Oauth_Adminhtml_Oauth_AuthorizeController extends Mage_Adminhtml_Cont
      */
     public function preDispatch()
     {
+<<<<<<< HEAD
         Mage::app()->getRequest()->setInternallyForwarded();
+=======
+        $this->getRequest()->setParam('forwarded', true);
+>>>>>>> origin/master
 
         // check login data before it set null in Mage_Admin_Model_Observer::actionPreDispatchAdmin
         $loginError = $this->_checkLoginIsEmpty();

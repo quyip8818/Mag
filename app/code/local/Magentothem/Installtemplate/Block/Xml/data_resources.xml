@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<<<<<<< HEAD
 <ma_sagitta>
     <resources>
         <resource>
@@ -7,9 +8,23 @@
             <root_template>two_columns_left</root_template>
 				<content><![CDATA[
 				<div class="home-content">{{widget type="categorytabsliders/advanced" title="Weekly Featured" cat_ids="155,8" template="magentothem/categorytabsliders/categorytabsliders.phtml" products_count="15" width_thumbnail="500" height_thumbnail="500"}}{{block type="cms/block" block_id="custom_block"}} {{widget type="categorytabs/advanced" title="Recently Bought" identify="new_products" cat_ids="156,10" template="magentothem/categorytabs/categorytabs.phtml" products_count="6" product_on_row="3" width_thumbnail="500" height_thumbnail="500"}} {{block type="cms/block" block_id="banner_center_one"}} {{block type="newproductslider/newproductslider" name="newproductslider" template="magentothem/newproductslider/newproductslider.phtml"}} {{block type="cms/block" block_id="banner_subscribe"}} {{block type="mostviewedproduct/mostviewedproduct" name="mostviewedproduct" template="magentothem/mostviewedproduct/mostviewedproduct.phtml"}}</div>
+=======
+<ma_sagitta3>
+    <resources>
+        <resource>
+            <title>Ma_sagitta3 Home page</title>
+            <identifier>ma_sagitta3_home</identifier>
+            <root_template>two_columns_left</root_template>
+				<content><![CDATA[
+				<div class="home-content">{{block type="cms/block" block_id="banner_center_one"}}{{widget type="categorytabsliders/advanced" title="Weekly Featured" identify="a" cat_ids="23,24" template="magentothem/categorytabsliders/categorytabsliders.phtml" products_count="15" width_thumbnail="150" height_thumbnail="150"}}{{widget type="categorytabsliders/advanced" title="New Arrival" identify="b" cat_ids="25,26" template="magentothem/categorytabsliders/categorytabsliders.phtml" products_count="15" width_thumbnail="150" height_thumbnail="150"}}{{widget type="categorytabsliders/advanced" title="Recently Bought" identify="c" cat_ids="118,119" template="magentothem/categorytabsliders/categorytabsliders.phtml" products_count="15" width_thumbnail="150" height_thumbnail="150"}}{{widget type="categorytabsliders/advanced" title="Popular Products" identify="fafa" cat_ids="124,125" template="magentothem/categorytabsliders/categorytabsliders.phtml" products_count="15" width_thumbnail="150" height_thumbnail="150"}}{{block type="cms/block" block_id="banner_subscribe"}}</div>
+>>>>>>> origin/master
 				]]></content>
 				<sort_order>1</sort_order>
             <is_active>1</is_active>
         </resource>
     </resources>
+<<<<<<< HEAD
 </ma_sagitta>
+=======
+</ma_sagitta3>
+>>>>>>> origin/master

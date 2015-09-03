@@ -20,7 +20,11 @@
  *
  * @category    Mage
  * @package     Mage_Core
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+=======
+ * @copyright  Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+>>>>>>> origin/master
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -76,6 +80,7 @@ class Mage_Core_Controller_Request_Http extends Zend_Controller_Request_Http
     protected $_beforeForwardInfo = array();
 
     /**
+<<<<<<< HEAD
      * Flag for recognizing if request internally forwarded
      *
      * @var bool
@@ -83,6 +88,8 @@ class Mage_Core_Controller_Request_Http extends Zend_Controller_Request_Http
     protected $_internallyForwarded = false;
 
     /**
+=======
+>>>>>>> origin/master
      * Returns ORIGINAL_PATH_INFO.
      * This value is calculated instead of reading PATH_INFO
      * directly from $_SERVER due to cross-platform differences.
@@ -541,6 +548,7 @@ class Mage_Core_Controller_Request_Http extends Zend_Controller_Request_Http
         }
         return false;
     }
+<<<<<<< HEAD
 
     /**
      * Define that request was forwarded internally
@@ -563,4 +571,6 @@ class Mage_Core_Controller_Request_Http extends Zend_Controller_Request_Http
     {
         return $this->_internallyForwarded;
     }
+=======
+>>>>>>> origin/master
 }

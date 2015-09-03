@@ -132,7 +132,11 @@
 		<brandslider>
 			<brandslider_config>
 				<enabled>1</enabled>
+<<<<<<< HEAD
 				<auto>1</auto>
+=======
+				<auto>0</auto>
+>>>>>>> origin/master
 				<speed>1000</speed>
 				<interval>600</interval>
 				<description>0</description>

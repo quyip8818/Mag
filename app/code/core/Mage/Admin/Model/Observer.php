@@ -20,7 +20,11 @@
  *
  * @category    Mage
  * @package     Mage_Admin
+<<<<<<< HEAD
  * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+=======
+ * @copyright  Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+>>>>>>> origin/master
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -44,10 +48,13 @@ class Mage_Admin_Model_Observer
     {
         $session = Mage::getSingleton('admin/session');
         /** @var $session Mage_Admin_Model_Session */
+<<<<<<< HEAD
 
         /**
          * @var $request Mage_Core_Controller_Request_Http
          */
+=======
+>>>>>>> origin/master
         $request = Mage::app()->getRequest();
         $user = $session->getUser();
 
@@ -62,7 +69,11 @@ class Mage_Admin_Model_Observer
         if (in_array($requestedActionName, $openActions)) {
             $request->setDispatched(true);
         } else {
+<<<<<<< HEAD
             if ($user) {
+=======
+            if($user) {
+>>>>>>> origin/master
                 $user->reload();
             }
             if (!$user || !$user->getId()) {
@@ -73,14 +84,22 @@ class Mage_Admin_Model_Observer
                     $session->login($username, $password, $request);
                     $request->setPost('login', null);
                 }
+<<<<<<< HEAD
                 if (!$request->getInternallyForwarded()) {
                     $request->setInternallyForwarded();
+=======
+                if (!$request->getParam('forwarded')) {
+>>>>>>> origin/master
                     if ($request->getParam('isIframe')) {
                         $request->setParam('forwarded', true)
                             ->setControllerName('index')
                             ->setActionName('deniedIframe')
                             ->setDispatched(false);
+<<<<<<< HEAD
                     } elseif ($request->getParam('isAjax')) {
+=======
+                    } elseif($request->getParam('isAjax')) {
+>>>>>>> origin/master
                         $request->setParam('forwarded', true)
                             ->setControllerName('index')
                             ->setActionName('deniedJson')

@@ -8,6 +8,7 @@ class Magentothem_Brandslider_Block_Adminhtml_Brandslider_Edit_Tab_Form extends 
       $this->setForm($form);
       $fieldset = $form->addFieldset('brandslider_form', array('legend'=>Mage::helper('brandslider')->__('Item information')));
      
+<<<<<<< HEAD
 	         
         //if (!Mage::app()->isSingleStoreMode()) {
             $fieldset->addField('store_ids', 'multiselect', array(
@@ -18,6 +19,8 @@ class Magentothem_Brandslider_Block_Adminhtml_Brandslider_Edit_Tab_Form extends 
             ));
         //}
 		
+=======
+>>>>>>> origin/master
       $fieldset->addField('title', 'text', array(
           'label'     => Mage::helper('brandslider')->__('Title'),
           'required'  => false,

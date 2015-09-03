@@ -19,7 +19,11 @@
  *
  * @category    Mage
  * @package     Mage_Adminhtml
+<<<<<<< HEAD
  * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+=======
+ * @copyright   Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+>>>>>>> origin/master
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 var AdminOrder = new Class.create();
